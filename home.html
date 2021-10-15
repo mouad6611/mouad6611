@@ -53,160 +53,815 @@
 	
 	<header>
 	
-	<header>
-	
-	<div class="d-block d-sm-none">
-		
+	<section id="section_offcanvas">
 
 
-<div id="mobileNav">
-	<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary" aria-label="Mobile Navigation">
-		<div class="container-sm">
-			
-			<button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#slide_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-bars"></i>
-			</button>
-			
-			<a href="/" class="navbar-brand" title="Swappa">
-				<img src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff_drop_e4611b.svg" alt="Swappa Logo">
-			</a>
-			
-			<button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#slide_search" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-search"></i>
-			</button>
-		</div>
-	</nav>
+<div id="slide_menu" class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" aria-label="Menu" style="visibility: visible;" aria-modal="true" role="dialog">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_menu_title">
+<div class="fa-fw d-inline-block me-1">
+<img src="https://static.swappa.com/static/images/logos/swappa_logo_ffffff.svg" class="align-middle" alt="Swappa Logo">
+</div>
+Save with Swappa
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+
+<div class="row row-cols-2 mb-3">
+<div class="col">
+<a href="/login" class="btn btn-primary d-block" title="Login" data-bs-toggle="offcanvas" data-bs-target="#slide_login" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show Login">
+Login
+</a>
+</div>
+<div class="col">
+<a href="/registration/register/" class="btn btn-outline-primary d-block" title="Register">
+Register
+</a>
+</div>
 </div>
 
-	</div>
-	
-	<div class="d-none d-sm-block">
-		
 
 
-<div id="primaryNav">
-	<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary" aria-label="Primary Navigation">
-		<div class="container d-block">
-			<div class="row">
-				<div class="col-4">
+<div class="slide_menu">
+<a href="/search" class="slide_menu_item" title="Search and Save" data-bs-toggle="offcanvas" data-bs-target="#slide_search" aria-controls="slide_search" aria-expanded="false" aria-label="Show Search">
+<i class="fas fa-fw fa-search"></i>
+Search
+<span class="float-end">
+<i class="far fa-fw fa-ellipsis" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/help" class="slide_menu_item" title="Help" data-bs-toggle="offcanvas" data-bs-target="#slide_help" aria-controls="slide_help" aria-expanded="false" aria-label="Show Help">
+<i class="far fa-fw fa-circle-question"></i>
+Help
+<span class="float-end">
+<i class="far fa-fw fa-ellipsis" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell" class="slide_menu_item" title="Sell with Swappa" data-bs-toggle="offcanvas" data-bs-target="#slide_sell" aria-controls="slide_sell" aria-expanded="false" aria-label="Show Sell">
+<i class="far fa-fw fa-circle-dollar"></i>
+Sell
+<span class="float-end">
+<i class="far fa-fw fa-ellipsis" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/cart" class="slide_menu_item" title="Cart" data-bs-toggle="offcanvas" data-bs-target="#slide_cart" aria-controls="slide_cart" aria-expanded="false" aria-label="Show Cart">
 
-					
-					<ul class="navbar-nav flex-row flex-nowrap justify-content-start">
-						<li class="nav-item">
-							<a href="#" class="nav-link" title="Menu" data-bs-toggle="offcanvas" data-bs-target="#slide_menu" aria-controls="slide_menu" aria-expanded="false" aria-label="Toggle Menu">
-								<i class="fas fa-bars" role="img" aria-label="Menu"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="/help" class="nav-link" title="Help" data-bs-toggle="offcanvas" data-bs-target="#slide_help" aria-controls="slide_help" aria-expanded="false" aria-label="Show Help">
-								<i class="fal fa-circle-question" role="img" aria-label="Help"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="/sell" class="nav-link" title="Sell" data-bs-toggle="offcanvas" data-bs-target="#slide_sell" aria-controls="slide_sell" aria-expanded="false" aria-label="Show Sell">
-								<i class="fal fa-circle-dollar" role="img" aria-label="Sell"></i>
-							</a>
-						</li>
-					</ul>
+<i class="far fa-fw fa-shopping-cart" aria-hidden="true"></i>
 
-				</div>
-				<div class="col-4">
+Cart
+<span class="float-end">
+<i class="far fa-fw fa-ellipsis" aria-hidden="true"></i>
+</span>
+</a>
 
-					
-					<a href="/" class="navbar-brand d-block text-center pt-2" title="Swappa">
-						<img src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff_drop_e4611b.svg" alt="Swappa Logo">
-					</a>
-
-				</div>
-				<div class="col-4">
-
-					
-					<ul class="navbar-nav flex-row flex-nowrap justify-content-end">
-						
-							<li class="nav-item">
-								<a href="/login" class="nav-link" title="Login" data-bs-toggle="offcanvas" data-bs-target="#slide_login" aria-controls="slide_login" aria-expanded="false" aria-label="Show Login">
-									<i class="fal fa-circle-user" role="img" aria-label="Login"></i>
-								</a>
-							</li>
-						
-						<li class="nav-item">
-							<a href="/cart" class="nav-link position-relative" title="Cart" data-bs-toggle="offcanvas" data-bs-target="#slide_cart" aria-controls="slide_cart" aria-expanded="false" aria-label="Show Cart">
-								
-									<i class="fal fa-fw fa-shopping-cart" role="img" aria-label="Cart"></i>
-								
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="/search" class="nav-link" title="Search" data-bs-toggle="offcanvas" data-bs-target="#slide_search" aria-controls="slide_search" aria-expanded="false" aria-label="Show Search">
-								<i class="fas fa-search" role="img" aria-label="Search"></i>
-							</a>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-		</div>
-	</nav>
 </div>
 
-		
 
-
-<div id="secondaryNav" class="">
-	
-	<nav class="navbar navbar-light" aria-label="Secondary Navigation">
-		<div class="container-md">
-			<ul class="nav m-auto justify-content-center">
-				<li class="nav-item dropdown" data-menu-slug="iphones">
-					<a href="/buy/iphones" class="nav-link dropdown-toggle">
-						<i class="fa fa-apple" aria-hidden="true"></i>
-						iPhones
-					</a>
-				<ul class="dropdown-menu"><li><a href="/buy/apple-iphone-8" class="dropdown-item">iPhone 8</a></li><li><a href="/buy/apple-iphone-xr" class="dropdown-item">iPhone Xr</a></li><li><a href="/buy/apple-iphone-11" class="dropdown-item">iPhone 11</a></li><li><a href="/buy/apple-iphone-se-2nd-gen" class="dropdown-item">iPhone SE 2nd Gen</a></li><li><a href="/buy/apple-iphone-8-plus" class="dropdown-item">iPhone 8 Plus</a></li><li><a href="/buy/apple-iphone-xs" class="dropdown-item">iPhone Xs</a></li><li><a href="/buy/apple-iphone-7" class="dropdown-item">iPhone 7</a></li><li><a href="/buy/apple-iphone-x" class="dropdown-item">iPhone X</a></li><li><a href="/buy/apple-iphone-12" class="dropdown-item">iPhone 12</a></li><li><a href="/guide/iphones" class="dropdown-item"><i class="fa-fw fal fa-info-circle"></i> Buyer's Guide</a></li><li><a href="/buy/iphones" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All iPhones</a></li></ul></li>
-				<li class="nav-item dropdown" data-menu-slug="phones">
-					<a href="/buy/phones" class="nav-link dropdown-toggle">
-						<i class="fa fa-mobile" aria-hidden="true"></i>
-						Phones
-					</a>
-				<ul class="dropdown-menu"><li><a href="/buy/unlocked" class="dropdown-item"><i class="fa-fw far fa-unlock-alt"></i> Unlocked</a></li><li><a href="/buy/iphones" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> Apple</a></li><li><a href="/buy/samsung-galaxy" class="dropdown-item">Samsung</a></li><li><a href="/buy/google-pixels" class="dropdown-item">Pixel</a></li><li><a href="/mobile/verizon/phones" class="dropdown-item">Verizon</a></li><li><a href="/mobile/att/phones" class="dropdown-item">AT&amp;T</a></li><li><a href="/mobile/t-mobile/phones" class="dropdown-item">T-Mobile</a></li><li><a href="/byod/communityphone" class="dropdown-item">Flip Phones</a></li><li><a href="/buy/phones" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All Phones</a></li></ul></li>
-				
-				<li class="nav-item dropdown" data-menu-slug="macbooks">
-					<a href="/buy/macbooks" class="nav-link dropdown-toggle">
-						<i class="fa fa-laptop" aria-hidden="true"></i>
-						MacBooks
-					</a>
-				<ul class="dropdown-menu"><li><a href="/computers/buy/macbook-pro-2020-13" class="dropdown-item">MacBook Pro 2020 13"</a></li><li><a href="/computers/buy/macbook-air-2020-13" class="dropdown-item">MacBook Air 2020 13"</a></li><li><a href="/computers/buy/macbook-pro-2019-16" class="dropdown-item">MacBook Pro 2019 16”</a></li><li><a href="/buy/macbooks/macbook-pro" class="dropdown-item">MacBook Pro</a></li><li><a href="/buy/macbooks/macbook-air" class="dropdown-item">MacBook Air</a></li><li><a href="/guide/macbook" class="dropdown-item"><i class="fa-fw fal fa-info-circle"></i> Buyer's Guide</a></li><li><a href="/buy/macbooks" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All MacBooks</a></li></ul></li>
-				<li class="nav-item dropdown" data-menu-slug="computers">
-					<a href="/computers" class="nav-link dropdown-toggle">
-						<i class="fa fa-laptop" aria-hidden="true"></i>
-						Computers
-					</a>
-				<ul class="dropdown-menu"><li><a href="/buy/macbooks" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> MacBooks</a></li><li><a href="/computers/mini-pc" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> Mac minis</a></li><li><a href="/computers/all-in-one" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> iMacs</a></li><li><a href="/computers/graphics-card" class="dropdown-item"><i class="fa-fw fas fa-microchip"></i> Graphics Cards</a></li><li><a href="/laptops/chromebooks" class="dropdown-item"><i class="fa-fw fab fa-chrome"></i> Chromebooks</a></li><li><a href="/laptops/windows" class="dropdown-item"><i class="fa-fw fab fa-windows"></i> Windows</a></li><li><a href="/laptops" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All Laptops</a></li><li><a href="/computers" class="dropdown-item"><i class="fa-fw fal fa-info-circle"></i> All Computers</a></li></ul></li>
-				<li class="nav-item dropdown" data-menu-slug="wearables">
-					<a href="/wearables" class="nav-link dropdown-toggle">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
-						Watches
-					</a>
-				<ul class="dropdown-menu"><li><a href="/buy/apple/watch" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> Apple Watch</a></li><li><a href="/buy/samsung/watch" class="dropdown-item"><i class="fa-fw fab fa-watch"></i> Samsung Watch</a></li><li><a href="/wearables/android-watch" class="dropdown-item"><i class="fa-fw fab fa-android"></i> Android Watch</a></li><li><a href="/wearables" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All Wearables</a></li></ul></li>
-				<li class="nav-item dropdown" data-menu-slug="tablets">
-					<a href="/buy/tablets" class="nav-link dropdown-toggle">
-						<i class="fa fa-tablet" aria-hidden="true"></i>
-						Tablets
-					</a>
-				<ul class="dropdown-menu"><li><a href="/buy/apple/ipad" class="dropdown-item"><i class="fa-fw fab fa-apple"></i> iPad</a></li><li><a href="/catalog/type/tablet?brand=samsung" class="dropdown-item"><i class="fa-fw fab fa-android"></i> Samsung</a></li><li><a href="/catalog/type/tablet?platform=windows-mobile" class="dropdown-item"><i class="fa-fw fab fa-windows"></i> Windows / Surface</a></li><li><a href="/catalog/type/tablet?brand=amazon" class="dropdown-item"><i class="fa-fw fab fa-amazon"></i> Amazon / Kindle</a></li><li><a href="/buy/tablets" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All Tablets</a></li></ul></li>
-				<li class="nav-item dropdown" data-menu-slug="gaming">
-					<a href="/gaming" class="nav-link dropdown-toggle">
-						<i class="fa fa-gamepad" aria-hidden="true"></i>
-						Video Games
-					</a>
-				<ul class="dropdown-menu"><li><a href="/gaming/playstation-5" class="dropdown-item"><i class="fa-fw fab fa-playstation"></i> PlayStation 5</a></li><li><a href="/gaming/playstation-4" class="dropdown-item"><i class="fa-fw fab fa-playstation"></i> PlayStation 4</a></li><li><a href="/gaming/xbox-series" class="dropdown-item"><i class="fa-fw fab fa-xbox"></i> Xbox Series X/S</a></li><li><a href="/gaming/nintendo-switch" class="dropdown-item">Nintendo Switch</a></li><li><a href="/catalog/type/game" class="dropdown-item"><i class="fa-fw fab fa-xbox"></i> Games</a></li><li><a href="/gaming" class="dropdown-item"><i class="fa-fw fas fa-arrow-right"></i> All Gaming</a></li></ul></li>
-			</ul>
-		</div>
-	</nav>
+<h4 class="mt-3">Shop</h4>
+<div class="slide_menu">
+<a href="/buy/iphones" class="slide_menu_item" title="Shop iPhones">
+<i class="fab fa-fw fa-apple" aria-hidden="true"></i>
+iPhones
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/buy/phones" class="slide_menu_item" title="Shop Cell Phones">
+<i class="far fa-fw fa-mobile" aria-hidden="true"></i>
+Phones
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/buy/macbooks" class="slide_menu_item" title="Shop MacBooks" data-menu-slug="laptops">
+<i class="far fa-fw fa-laptop" aria-hidden="true"></i>
+MacBooks
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/computers" class="slide_menu_item" title="Shop Computers" data-menu-slug="computers">
+<i class="fas fa-fw fa-desktop" aria-hidden="true"></i>
+Computers
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/wearables" class="slide_menu_item" title="Shop Watches and Wearables" data-menu-slug="wearables">
+<i class="fas fa-fw fa-watch" aria-hidden="true"></i>
+Watches and Wearables
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/buy/tablets" class="slide_menu_item" title="Shop Tablets" data-menu-slug="tablets">
+<i class="far fa-fw fa-tablet" aria-hidden="true"></i>
+Tablets and iPads
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/gaming" class="slide_menu_item" title="Shop Video Games and Consoles" data-menu-slug="gaming">
+<i class="far fa-fw fa-gamepad-modern" aria-hidden="true"></i>
+Video Game Consoles
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/home-tech" class="slide_menu_item" title="Shop Home Tech" data-menu-slug="home_tech">
+<i class="far fa-fw fa-house-signal" aria-hidden="true"></i>
+Home Tech
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/cameras" class="slide_menu_item" title="Shop Cameras and Lenses" data-menu-slug="cameras">
+<i class="far fa-fw fa-camera" aria-hidden="true"></i>
+Cameras and Lenses
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
 </div>
 
-	</div>
-</header>
+</div>
+</div>
+
+<div id="quick-search-app"><div id="slide_search" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-label="Search" class="offcanvas offcanvas-end"><div class="offcanvas-header"><h3 id="slide_search_title" class="offcanvas-title"><i aria-label="Search" aria-hidden="true" class="fa fa-fw fa-search"></i>
+Search and Save
+</h3> <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="btn-close text-reset"></button></div> <div data-v-939da5c0="" class="position-relative" style="overflow-y: auto;"><form data-v-939da5c0="" id="slide_search_form" action="/search" method="get" class="position-sticky bg-white top-0 start-0 px-3 pt-3" style="z-index: 100;"><div data-v-939da5c0="" class="input-group"><input data-v-939da5c0="" name="q" type="search" placeholder="Find a good deal" aria-label="Search" data-autocomplete-legacy="true" autocomplete="off" class="form-control"><button data-v-939da5c0="" type="submit" disabled="disabled" class="btn btn-primary opacity-100"><i data-v-939da5c0="" class="fa fa-fw fa-search"></i></button></div></form><div data-v-939da5c0="" class="offcanvas-body"><!----><!----></div><!----></div></div></div>
+
+
+
+
+<div id="slide_help" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" aria-label="Help">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_help_title">
+<i class="far fa-fw fa-question-circle" aria-role="img" aria-label="Help"></i>
+Get Help, Fast
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+<h4>Email</h4>
+<a href="mailto:help@swappa.com" class="btn btn-outline-primary" target="_blank">
+<i class="far fa-fw fa-envelope" aria-role="img" aria-label="Email"></i>
+help@swappa.com
+</a>
+
+<h4 class="mt-4">
+Need help with a listing or a sale?
+</h4>
+<a href="/help" class="btn btn-outline-primary" title="Submit Help Request">
+Submit Help Request
+</a>
+
+
+
+<h4 class="mt-4">
+Helpful Links
+</h4>
+<div>
+<ul class="nav nav-fill justify-content-center">
+<li class="nav-item">
+<a href="/how-to-sell" title="How to Sell on Swappa">
+How to Sell
+</a>
+</li>
+<li class="nav-item">
+<a href="/faq" title="Frequently Asked Questions and Answers">
+FAQ Pages
+</a>
+</li>
+<li class="nav-item">
+<a href="/contact" title="Contact Swappa">
+Other Contact
+</a>
+</li>
+</ul>
+</div>
+
+<p class="well mt-4">
+Swappa's typical response time for help requests is around 20 minutes...
+<em class="text-nowrap">That's really fast</em>
+</p>
+
+</div>
+</div>
+
+
+
+<div id="slide_sell" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" aria-label="Sell">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_sell_title">
+<i class="far fa-fw fa-circle-dollar" role="img" aria-label="Sell" aria-hidden="true"></i>
+Sell with Swappa
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+<h4>
+Make More <span class="text-primary">Green</span>
+</h4>
+<p>
+<a href="/sell" class="btn btn-outline-primary d-block mx-3" title="Sell with Swappa">
+Start Selling <i class="fas fa-arrow-right" aria-hidden="true"></i>
+</a>
+</p>
+
+<h4 class="mt-3">Seller Help</h4>
+<div>
+<ul class="nav nav-fill justify-content-center">
+<li class="nav-item">
+<a href="/how-to-sell" title="How to Sell on Swappa">
+How to Sell
+</a>
+</li>
+<li class="nav-item">
+<a href="/fees" title="Fair Fees">
+Fair Fees
+</a>
+</li>
+<li class="nav-item">
+<a href="/faq/sell" title="Seller Questions and Answers">
+Seller FAQ
+</a>
+</li>
+</ul>
+</div>
+
+<h4 class="mt-3">Sell My</h4>
+<div class="slide_menu">
+<a href="/sell/iphone" class="slide_menu_item" title="Sell Your iPhone">
+<i class="fab fa-fw fa-apple" aria-hidden="true"></i>
+iPhone
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/phone" class="slide_menu_item" title="Sell Your Phone">
+<i class="far fa-fw fa-mobile" aria-hidden="true"></i>
+Phone
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/macbook" class="slide_menu_item" title="Sell Your MacBook">
+<i class="far fa-fw fa-laptop" aria-hidden="true"></i>
+MacBook
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/computers" class="slide_menu_item" title="Sell Your Computer">
+<i class="fas fa-fw fa-desktop" aria-hidden="true"></i>
+Computer
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/wearables" class="slide_menu_item" title="Sell Your Wearable" data-menu-slug="wearables">
+<i class="fas fa-fw fa-watch" aria-hidden="true"></i>
+Watch or Wearable
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/tablets" class="slide_menu_item" title="Sell Your Tablet" data-menu-slug="tablets">
+<i class="far fa-fw fa-tablet" aria-hidden="true"></i>
+Tablet or iPad
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/gaming" class="slide_menu_item" title="Sell Your Video Game Console" data-menu-slug="gaming">
+<i class="far fa-fw fa-gamepad-modern" aria-hidden="true"></i>
+Video Game Console
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/home-tech" class="slide_menu_item" title="Sell Your Home Tech" data-menu-slug="home_tech">
+<i class="far fa-fw fa-house-signal" aria-hidden="true"></i>
+Home Tech
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+<a href="/sell/cameras" class="slide_menu_item" title="Sell Your Camera or Lense" data-menu-slug="cameras">
+<i class="far fa-fw fa-camera" aria-hidden="true"></i>
+Camera or Lens
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="slide_cart" class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-label="Cart">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_cart_title">
+
+<i class="far fa-fw fa-shopping-cart" aria-role="img" aria-label="Cart" aria-hidden="true"></i>
+
+Cart, Full of Deals
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body pb-0">
+
+
+
+<div class="mt-3">
+
+<div class="well">
+<p>
+Your cart is empty :(
+</p>
+</div>
+
+</div>
+
+</div>
+<div class="offcanvas-footer bgc-indigo text-light p-3">
+
+<div class="row">
+<div class="col text-center">
+<a href="/cart" class="d-block link-light p-2 fw-bold" title="View Cart">
+Total: $<span class="cart_total">0</span>
+</a>
+</div>
+<div class="col text-center">
+
+<a href="/search" class="btn btn-primary d-block" title="Search" data-bs-toggle="offcanvas" data-bs-target="#slide_search" aria-controls="slide_search" aria-expanded="false" aria-label="Show Search">
+Find a good deal
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>
+
+<script type="text/javascript">
+
+$.validator.addMethod("regex", function(value, element, regexp) {
+var re = new RegExp(regexp);
+return this.optional(element) || re.test(value);
+}, "Please check your input.");
+
+$.validator.addMethod("money", function(value, element) {
+var isValidMoney = /^\d+(\.\d{0,2})?$/.test(value);
+return this.optional(element) || isValidMoney;
+}, "Please check your input.");
+
+$.validator.addMethod("filesize", function( value, element, param ) {
+
+if (this.optional(element)) {
+return this.optional(element);
+}
+
+if ($(element).attr("type") === "file") {
+if ( element.files && element.files.length ) {
+for (i = 0; i < element.files.length; i++) {
+if (element.files[i].size > param) {
+return false;
+}
+}
+}
+}
+
+return true;
+}, "File size must be less than {0}");
+
+$.validator.addMethod('empty', function(value, element) {
+return (value === '');
+}, "This field must remain empty.");
+
+$.validator.addMethod('zipcodeCustom', function(value, element) {
+return this.optional(element) || /\d{5}-\d{4}$|^\d{5}$|^[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]$/.test(value);
+}, "The specified ZIP Code is invalid");
+
+$.validator.setDefaults({
+errorElement: "div",
+errorClass: "is-invalid",
+errorPlacement: function ( error, element ) {
+error.addClass("invalid-feedback");
+error.insertAfter(element);
+},
+});
+</script>
+
+
+<style>
+.btn-google img {
+padding: 0 13px 0 0;
+height: 22px;
+position: relative;
+top: -3px;
+}
+</style>
+<script type="text/javascript">
+$(function() {
+
+var slide_login = document.getElementById('slide_login');
+slide_login.addEventListener('shown.bs.offcanvas', function () {
+document.getElementById('id_username').focus();
+});
+
+$("#offcanvasFormLogin").validate({
+errorClass: "is-invalid",
+errorElement: "div",
+submitHandler: function(form) {
+$(form).find('input').first().val('GR80NG1NmNLbdiOK5BZ0MOAbv0sxKDYE6Cf9Na7qK50FoeTwGpTi09tZG6AuA14l');
+
+$('#id_username').val(function(i,val) {
+return $.trim(val);
+});
+form.submit();
+},
+errorPlacement: function(error, element) {
+error.addClass("invalid-feedback");
+error.insertAfter(element);
+},
+rules: {
+username: {
+required: true,
+email: true
+},
+password: {
+required: true,
+minlength: 4
+}
+},
+});
+
+});
+function gaLoginEvents(label) {
+ga('send', 'event', "Login and Signup", "click", label, 0, {transport: 'beacon'});
+}
+
+</script>
+
+
+<div id="slide_login" class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" aria-label="Login">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_login_label">
+<i class="fal fa-circle-user" aria-hidden="true"></i>
+Login for Deals
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+<form id="offcanvasFormLogin" action="/login" method="post" role="form" novalidate="novalidate">
+<input type="hidden" name="csrfmiddlewaretoken" class="form-control">
+<input type="hidden" name="captchastatus" value="false" class="form-control">
+
+<input type="hidden" name="next" value="/" class="form-control">
+
+<input id="id_webclient_id" name="webclient_id" type="hidden" class="form-control">
+<div class="mb-2">
+<label for="id_username" class="form-label">Email Address</label>
+<input type="text" class="form-control" id="id_username" name="username" value="">
+</div>
+<div class="mb-4">
+<label for="id_password" class="form-label">Password</label>
+<input type="password" class="form-control" id="id_password" name="password">
+</div>
+<button class="btn btn-primary form-control" type="submit" onclick="return gaLoginEvents('Basic Auth Login');">Log In</button>
+</form>
+
+<p class="text-center text-muted mt-3">
+OR
+</p>
+
+
+<div class="mt-3">
+<a href="/login/google-oauth2/?next=/" rel="nofollow" onclick="return gaLoginEvents('Google Login');" class="d-block btn btn-google btn-outline-info">
+<img src="https://static.swappa.com/static/icons/social/login_google.png">
+<span>Log In with Google</span>
+</a>
+</div>
+
+<div class="row row-cols-2 mt-5">
+<div class="col">
+<a href="/registration/recover/" class="d-block btn btn-outline-accent" title="Recover Forgotten Password">
+Forgot Password
+</a>
+</div>
+<div class="col">
+<a href="/registration/register/" onclick="return gaLoginEvents('Basic Auth Register');" class="d-block btn btn-accent">
+Register
+</a>
+</div>
+</div>
+
+<div class="text-center mt-4">
+<a href="/login" class="link-accent" title="Login Page">
+Login Page
+</a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div id="slide_forums" class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-label="Forums">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="slide_forums_title">
+<i class="far fa-fw fa-messages-question" aria-role="img" aria-label="Forums" aria-hidden="true"></i>
+Forums, Community
+</h3>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+
+
+
+<ul class="nav nav-tabs mb-3" role="tablist">
+<li class="nav-item" role="presentation">
+<a id="forums_ofc_categories_tab" href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#forums_ofc_categories_content" type="button" role="tab" aria-controls="forums_ofc_categories_content" aria-selected="true">
+Categories
+</a>
+</li>
+<li class="nav-item" role="presentation">
+<a id="forums_ofc_policies_tab" href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#forums_ofc_policies_content" type="button" role="tab" aria-controls="forums_ofc_policies_content" aria-selected="false">
+Policies
+</a>
+</li>
+</ul>
+
+
+<div id="slide_forums_tab_content" class="tab-content">
+<div id="forums_ofc_categories_content" class="tab-pane fade show active" role="tabpanel" aria-labelledby="forums_ofc_categories_tab">
+
+
+
+<div class="slide_menu">
+
+<a href="/forums/category/buying" class="slide_menu_item" title="Forums - Buying">
+<i class="far fa-fw fa-cart-shopping"></i>
+Buying
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/how-to" class="slide_menu_item" title="Forums - How To">
+<i class="far fa-fw fa-circle-info"></i>
+How To
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/marketplace" class="slide_menu_item" title="Forums - Marketplace">
+<i class="far fa-fw fa-store"></i>
+Marketplace
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/payments" class="slide_menu_item" title="Forums - Payments">
+<i class="far fa-fw fa-coins"></i>
+Payments
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/popular" class="slide_menu_item" title="Forums - Popular">
+<i class="far fa-fw fa-fire"></i>
+Popular
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/repair" class="slide_menu_item" title="Forums - Repair">
+<i class="far fa-fw fa-wrench"></i>
+Repair
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/selling" class="slide_menu_item" title="Forums - Selling">
+<i class="far fa-fw fa-circle-dollar"></i>
+Selling
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/shipping" class="slide_menu_item" title="Forums - Shipping">
+<i class="far fa-fw fa-truck-fast"></i>
+Shipping
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/welcome" class="slide_menu_item" title="Forums - Welcome">
+<i class="far fa-fw fa-hand-wave"></i>
+Welcome
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/blog" class="slide_menu_item" title="Forums - Blog">
+<i class="far fa-fw fa-blog"></i>
+Blog
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/faq" class="slide_menu_item" title="Forums - FAQ">
+<i class="far fa-fw fa-comment-question"></i>
+FAQ
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/forums" class="slide_menu_item" title="Forums - Forums">
+<i class="far fa-fw fa-messages-question"></i>
+Forums
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/help" class="slide_menu_item" title="Forums - Help">
+<i class="far fa-fw fa-circle-question"></i>
+Help
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/international" class="slide_menu_item" title="Forums - International">
+<i class="far fa-fw fa-globe"></i>
+International
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/local" class="slide_menu_item" title="Forums - Local">
+<i class="far fa-fw fa-map-location"></i>
+Local
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/news" class="slide_menu_item" title="Forums - News">
+<i class="far fa-fw fa-newspaper"></i>
+News
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+<a href="/forums/category/policies" class="slide_menu_item" title="Forums - Policies">
+<i class="far fa-fw fa-clipboard-list-check"></i>
+Policies
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+
+</div>
+
+</div>
+<div id="forums_ofc_policies_content" class="tab-pane fade" role="tabpanel" aria-labelledby="forums_ofc_policies_tab">
+
+
+
+<div class="">
+
+<div class="card p-3 mb-3">
+<a href="/forums/thread/FVKU2943/swappa-forums-are-for-discussion-of-topics" class="d-block" title="Swappa Forums are for discussion of topics relevant to Swappa users and activities">
+Swappa Forums are for discussion of topics relevant to Swappa users and activities
+</a>
+</div>
+<!--
+<div class="border-bottom p-2 pb-3 mb-1">
+<a href="/forums/thread/FVKU2943/swappa-forums-are-for-discussion-of-topics" class="" title="Swappa Forums are for discussion of topics relevant to Swappa users and activities">
+Swappa Forums are for discussion of topics relevant to Swappa users and activities
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+</div>
+-->
+
+<div class="card p-3 mb-3">
+<a href="/forums/thread/FVKU1010/swappa-forums-are-moderated-by-swappa-staff" class="d-block" title="Swappa Forums are moderated by Swappa staff">
+Swappa Forums are moderated by Swappa staff
+</a>
+</div>
+<!--
+<div class="border-bottom p-2 pb-3 mb-1">
+<a href="/forums/thread/FVKU1010/swappa-forums-are-moderated-by-swappa-staff" class="" title="Swappa Forums are moderated by Swappa staff">
+Swappa Forums are moderated by Swappa staff
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+</div>
+-->
+
+<div class="card p-3 mb-3">
+<a href="/forums/thread/FVKU8382/anonymous-posting-is-convenience-feature-not-security" class="d-block" title="Anonymous posting is a convenience feature (not a security feature)">
+Anonymous posting is a convenience feature (not a security feature)
+</a>
+</div>
+<!--
+<div class="border-bottom p-2 pb-3 mb-1">
+<a href="/forums/thread/FVKU8382/anonymous-posting-is-convenience-feature-not-security" class="" title="Anonymous posting is a convenience feature (not a security feature)">
+Anonymous posting is a convenience feature (not a security feature)
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+</div>
+-->
+
+<div class="card p-3 mb-3">
+<a href="/forums/thread/FVLA0223/welcome-to-swappa-forums" class="d-block" title="Welcome to the Swappa Forums!">
+Welcome to the Swappa Forums!
+</a>
+</div>
+<!--
+<div class="border-bottom p-2 pb-3 mb-1">
+<a href="/forums/thread/FVLA0223/welcome-to-swappa-forums" class="" title="Welcome to the Swappa Forums!">
+Welcome to the Swappa Forums!
+<span class="float-end">
+<i class="fas fa-fw fa-arrow-right" aria-hidden="true"></i>
+</span>
+</a>
+</div>
+-->
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="offcanvas-footer bgc-pink p-3">
+
+<div class="row">
+<div class="col text-center">
+<a href="/forums" class="d-block text-white p-2" title="Forums Home">
+<i class="far fa-messages-question" aria-hidden="true"></i>
+Forums Home
+</a>
+</div>
+<div class="col text-center">
+<a href="#" class="d-block text-white p-2" title="Forums Search">
+<i class="far fa-search" aria-hidden="true"></i>
+Search Forums
+</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="modal-backdrop fade show"></div></section>
+	
+
 </header>
 	</head>
 
